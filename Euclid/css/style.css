@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-ExtraLight.ttf') format('ttf');
+    font-weight: 200;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Light.ttf') format('ttf');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-ExtraBold.ttf') format('ttf');
+    font-weight: 800;
+    font-display: swap;
+    font-style: normal;
+}
+
+:root {
+    --color-orange: #FF9900;
+    --color-dark-orange: #E1670E;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: #333333;
+    background-color:#FFFFFF;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    font-style: normal;
+}
+
+img {
+   width: 100%;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+button {
+    border: 0px;
+}
+
+
+.container {
+    max-width: 1890px;
+    padding: 0px 60px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 10px;
+    padding-bottom: 4px;
+}
+
+.header-logo-link {
+    padding-top: 10px;
+    width: 13%;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+
+.header-nav-list {
+    display: flex;
+    margin: 0;
+    margin-left: auto;
+}
+
+.header-nav-list-item-link:hover {
+    border-bottom: 3px solid var(--color-orange);
+}
+
+.header-nav-list-item-link:active {
+    color: var(--color-orange);
+}
+
+
+.header-nav-list-item:not(:last-child) {
+    margin-right: 63px;
+}
+
+
+.header-nav-list-item-link {
+    color: #333333;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.header-nav {
+    margin-left: auto;
+}
+
+.nav-search {
+    background: url("../img/search.svg");
+    width: 30px;
+    min-height: 30px;
+    background-repeat: no-repeat;
+    background-position:center;
+    cursor: pointer;
+}
+
+.header-logo {
+    padding-top: 14px;
+    padding-bottom: 15px;
+    margin-right: auto;
+}
+
+.search {
+    margin-left: 71px;
+    border: 0px;
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+}
+
+/*Hero*/
+
+.hero {
+    margin-bottom: 90px;
+}
+
+.hero-content {
+    background-image: url(../img/hero.png);
+    width: 100%;
+    border: 1px solid black;
+    padding: 80px 0px 70px 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-hero-title {
+    font-size: 53px;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 57%;
+    line-height: 70px;
+}
+
+.section-hero-description {
+    font-weight: bold;
+    color: #FFFFFF;
+    width: 50%;
+    font-size: 18px;
+    word-spacing: 5px;
+    margin-bottom: 75px;
+    margin-top: 13px;
+    line-height: 25px;
+}
+
+.hero-button {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    background: var(--color-orange);
+    color: #FFFFFF;
+    width: 17%;
+    min-height: 60px;
+}
+
+.hero-button:hover {
+    background-color: rgba(255, 153, 0, 0.6);
+}
+
+.hero-button:active {
+    background-color: var(--color-dark-orange);
+}
+
+/* about us section */
+
+.section-title {
+    margin-bottom: 17px;
+}
+
+.section-description {
+    width: 71%;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 25px;
+    margin-bottom: 38px;
+}
+
+.about-us__section-bottom {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.about-us-left__section {
+    display: flex;
+    width: 49%;
+    min-height: 500px;
+    background-image: url(../img/worker.jpg);
+    background-position: center;
+    background-size: cover;
+    color:#FFFFFF;
+
+}
+
+.about-us-left__section-description {
+    font-weight: 700;
+    font-size: 16px;
+    width: 70%;
+    line-height: 25px;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin: 0px;
+}
+.about-us-left__section-content {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: auto;
+    padding: 25px 0px 42px 44px;
+}
+
+.about-us-left__section {
+    display: flex;
+}
+
+#about-us__section-button {
+    border: 2px solid var(--color-orange);
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: transparent;
+    padding: 10px 20px;
+    margin: 0px;
+    margin-left: 3px;
+}
+
+#about-us__section-button:hover {
+    background-color: var(--color-orange);
+}
+
+#about-us__section-button:active {
+    background-color: var(--color-dark-orange);
+}
+
+.about-us-right__section {
+    width: 50%;
+    padding-left: 22px;
+}
+
+.about-us-img {
+    width: 23%;
+}
+
+.about-us-list-item {
+    display: flex;
+    border: 1px solid #e5e5e5;
+    padding-left: 55px;
+}
+
+.about-us-list-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.about-us-right__section-description {
+    padding-left: 43px;
+    padding-top: 48px;
+    min-height: 210px;
+}
+
+.about-us-right__section-paragraph {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0;
+    line-height: 28px;
+    width: 78%;
+}
+
+/* How we work section */
+
+.how-we-work-section {
+    margin-bottom: 85px;
+}
+
+.how-we-work-list {
+    display: flex;
+    margin-bottom: 29px;
+}
+
+.first-step {
+    color: var(--color-orange);
+}
+
+.how-we-work-bottom {
+    display: flex;
+}
+
+.how-we-work-left {
+    width: 45%;
+    margin-right: 20px;
+}
+
+.how-we-work-section-title {
+    margin-bottom: 40px;
+}
+
+.how-we-work-right {
+    margin-left: auto;
+    width: 49%;
+    background-image: url(../img/computer.png);
+}
+
+.how-we-work-list-item {
+    cursor: pointer;
+} 
+
+.how-we-work-list-item:not(:last-child) {
+    margin-right: 70px;
+}
+
+.how-we-work-list-item:hover {
+    color: var(--color-orange);
+}
+
+.how-we-work-list-item:active {
+    color: var(--color-dark-orange);
+}
+
+.how-we-work-description {
+    font-weight: 400;
+    font-size: 13px;
+    margin: 0px;
+    line-height: 25px;
+    margin-bottom: 57px;
+    width: 95%;
+}
+
+.how-we-work-more-button {
+    font-weight: 700;
+    font-size: 13px;
+    padding: 16px 38px;
+    background-color: var(--color-orange);
+    color: #FFFFFF;
+    margin-right: 22px;
+    width: 22%;
+}
+
+.how-we-work-contract-button {
+    padding: 12px 28px;
+    background-color: #FFFFFF;
+    color: black;
+    border: 1px solid black;
+    font-size: 13px;
+}
+
+.how-we-work-contract-button:hover {
+    background-color: #666666;
+} 
+
+.how-we-work-contract-button:active {
+    background-color: #000000;
+    color: white;
+}
+
+/* Questions section */
+
+.questions-section-title {
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.line-main {
+    color: #CACACA;
+    margin-left: 9px;
+    margin-bottom: 26px;
+}
+
+.question-list-link {
+    font-size: 18px;
+    margin-left: 5px;
+    font-weight: 700;
+    color: black;
+}
+
+.question-list-link:hover {
+    color: var(--color-orange);
+}
+
+.line {
+    color: #CACACA;
+    margin-left: 9px;
+    margin-top: 40px;    
+}
+
+.questions-section-list {
+    margin-bottom: 70px;
+}
+
+.question-section-list-item {
+    padding-bottom: 28px;
+    padding-top: 20px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray; 
+    margin-top: -1px;
+    display: flex;
+    align-items: center;
+}
+
+.plus-button {
+    max-width: 50px;
+    height: 50px;
+    width: 100%;
+    background-image: url(../img/plus.svg);
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ECECEC;
+    border-radius: 100%;
+    margin-left: auto;
+}
+
+.title-h2 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.title-h3 {
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.description-title-2 {
+    margin-top: 22px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #222222;
+}
+
+.footer-container-content {
+    padding-top: 35px;
+    display: flex;
+    width: 100%;
+    padding-right: 0px;
+}
+
+.footer-left-part {
+    width: 30%;
+    margin-right: 0px;
+}
+
+.footer-logo-img {
+    width: 42%;
+}
+
+.footer-center-part {
+    width: 38%;
+    padding-left: 73px;
+    margin-right: 65px;
+}
+
+.footer-right-part {
+    width: 30%;
+    margin-left: auto;
+    padding-left: 130px;
+    margin-top: 50px;
+}
+
+.footer-list {
+    margin-top: 12px;
+}
+
+.footer-list-link {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.footer-list-item {
+    margin-bottom: 10px;
+}
+
+.footer-social-links-img {
+    width: 10%;
+}
+
+.footer-social-links-list {
+    display: flex;
+}
+
+.footer-social-links {
+    margin-top: 100px;
+}
+
+.footer-list {
+    margin-bottom: 80px;
+}
+
+.facebook-link {
+    margin-right: 20px;
+}
+
+.vk-link {
+    margin-right: 20px;
+}
+
+.footer-title {
+    color: #CACACA;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-right-part-text {
+    font-weight: 400;
+    font-size: 13px;
+    color: #CACACA;
+    line-height: 28px;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
+.input {
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 20px;
+    color: #CACACA;
+    background-color: #414141;
+    border: 0px;
+    padding-left: 17px;
+    font-size: 13px;
+}
+
+.message {
+    min-height: 110px;
+    margin-bottom: 30px;
+}
+
+.send-button {
+    width: 48%;
+    min-height: 50px;
+    margin-bottom: 100px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: var(--color-orange);
+    font-size: 13px;
+    margin-right: 20px;
+}
+
+#sharing-info-agreement {
+    color: #CACACA;
+    font-size: 11px;
+    width: 100%;
+    padding-left: 15px;
+}
+
+.question-list-link-pre-last {
+    margin-bottom: 0px;
+}
